@@ -51,7 +51,31 @@
 			<version>8.0.33</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.newrelic.agent.java</groupId>
+			<artifactId>newrelic-api</artifactId>
+			<version>8.18.0</version>  <!-- Update to the latest version if needed -->
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>jakarta.validation</groupId>
+			<artifactId>jakarta.validation-api</artifactId>
+			<version>3.0.2</version>
+		</dependency>
 
+
+		<dependency>
+			<groupId>com.github.vladimir-bukhtoyarov</groupId>
+			<artifactId>bucket4j-core</artifactId>
+			<version>7.6.0</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+			<version>3.4.1</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

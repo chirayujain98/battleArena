@@ -1,4 +1,5 @@
 package com.gocomet.battleArena.dto;
+import jakarta.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -6,6 +7,7 @@ public class ScoreSubmissionRequest {
     @JsonProperty("user_id")
     private int userId;
     @JsonProperty("score")
+    @Size(min = 1, max = Integer.MAX_VALUE, message = "prevent long string sql injection")
     private int score;
     @JsonProperty("game_mode")
     private String gameMode;
