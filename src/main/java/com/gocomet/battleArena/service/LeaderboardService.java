@@ -71,7 +71,7 @@ public class LeaderboardService {
     public List<Leaderboard> getTopPlayers() {
         Set<String> topUsers = redisZSet.reverseRange(LEADERBOARD_KEY, 0, 9);
 
-        if (topUsers != null && !topUsers.isEmpty() && topUsers.size() >= 10) {
+        if (topUsers != null && !topUsers.isEmpty()) {
             // Fetch from database and return
             return topUsers.stream()
                     .map(userId -> {
