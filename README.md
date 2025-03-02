@@ -8,7 +8,7 @@ This project provides real-time updates and rankings for the data of contestants
 - **Caching Layer:** Redis  
 - **Backend Service:** Spring Boot  
 - **Monitoring System and Dashboard:** New Relic  
-- **Front End:** React  
+- **Front End:** React : https://github.com/chirayujain98/battleArena-UI
 - **Database:** MySQL (includes all DDL and DML scripts mentioned in the project)  
 - **Python Script:** Used to ingest and update the data in the database  
 
